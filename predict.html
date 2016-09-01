@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Temperature: <input type="text" id="temp" >
+Humidity:    <input type="text" id="humid" >
+
+<p>Click the button to display the value of the value attribute of the text field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+function myFunction() {
+    var x = document.getElementById("temp").value;//kelvin
+    var y = document.getElementById("humid").value;
+    x = kToC(x);
+    var tc = kToC(x);
+
+    var out = '<h4>Temperature:</h4>' + x+'<h3>°C</h3>' +'<br>';
+    out += '<h4>Humidity:</h4>' + y + '<br>';
+    out += '<h1>'+ predictS(x, y); + '</h1>';
+
+    document.getElementById("demo").innerHTML = out;
+}
+
+function predictS(temp, humid) {
+    var prediction;
+    if (humid<53.8)
+        {
+            return prediction="Dry";
+        }
+        else if(humid>=53.8)
+        {
+            if (humid>=92.1){return prediction="Wet";
+           }
+        else if(humid<92.1)
+        {   
+            if (temp<27.25){return prediction="Dry";
+           }
+        else if(temp<27.25)
+        {
+            if (humid>=90.75){return prediction="Wet";
+           }
+        else if(humid<90.75)
+        {
+            if (temp<27.95){return prediction="Dry";
+           }
+           else if (temo>=27.95){return prediction="Wet";
+           }
+        }
+        }
+        }
+
+        }
+
+
+}
+
+function kToC(kelvin){
+    var cel = kelvin - 273.15;
+    return cel
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+function predictS(temp, humid) {
+    var prediction;
+    if (humid<53.8)
+        {
+            return prediction="Dry";
+        }
+        else if(humid>=53.8)
+        {
+            if (humid>=92.1){return prediction="Dry";
+           }
+        }
+
+
+}
