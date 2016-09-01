@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+            <!-- Latest compiled JavaScript -->
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+<body>
+
+<div id="id01"></div>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+var url = "myTutorials.txt";
+
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        var myArr = JSON.parse(xmlhttp.responseText);
+        myFunction(myArr);
+    }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function myFunction(arr) {
+    var out = "";
+    var i;
+     out += '<table class="table table-bordered">' + '<tr><th>' +arr[0].dt_txt+'</th>' + '<th>' + arr[1].dt_txt + '</th>';
+     out += '<th>' + arr[2].dt_txt + '</th>' + '<th>' + arr[3].dt_txt + '</th>' + '<th>' + arr[4].dt_txt + '</th></tr>';
+    for(i = 1; i < arr.length; i++) {
+        //out += '<table>' + '<tr><th>' +arr[1].temp+'</th>' + '<th>' + arr[2].gt_txt + '</th>';
+        out += '<tc>' + '<td>' 
+        out += '<strong>Temp:</strong>' + arr[i].temp+'K' + '<br>'
+        out += '<strong>Humidity:</strong>' + arr[i].humidity+'%' + '<br>'
+
+        out += '<strong>Prediction:</strong>' + arr[i].humidity+'%' + '<br>'
+
+
+        out += '</td>' + '</tc>';
+        //out += '<a href="' + arr[i].url + '">' + arr[i].display + '</a><br>';
+    }
+    out +='</table>';
+    document.getElementById("id01").innerHTML = out;
+}
+</script>
+
+</body>
+</html>
+
