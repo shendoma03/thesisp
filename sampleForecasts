@@ -1,0 +1,50 @@
+
+1
+[
+{"temp":300.803,"temp_min":300.803,"temp_max":300.803,"pressure":1009.38,"sea_level":1023.56,"grnd_level":1009.38,"humidity":98,"temp_kf":0,"dt_txt":"2016-09-01 00:00:00"},
+{"temp":302.321,"temp_min":302.321,"temp_max":302.321,"pressure":1008.47,"sea_level":1022.71,"grnd_level":1008.47,"humidity":93,"temp_kf":0,"dt_txt":"2016-09-01 03:00:00"},
+{"temp":302.684,"temp_min":302.684,"temp_max":302.684,"pressure":1006.43,"sea_level":1020.67,"grnd_level":1006.43,"humidity":90,"temp_kf":0,"dt_txt":"2016-09-01 06:00:00"},
+{"temp":301.444,"temp_min":301.444,"temp_max":301.444,"pressure":1006.36,"sea_level":1020.52,"grnd_level":1006.36,"humidity":93,"temp_kf":0,"dt_txt":"2016-09-01 09:00:00"},
+{"temp":300.537,"temp_min":300.537,"temp_max":300.537,"pressure":1008.01,"sea_level":1022.21,"grnd_level":1008.01,"humidity":96,"temp_kf":0,"dt_txt":"2016-09-01 12:00:00"},
+{"temp":300.335,"temp_min":300.335,"temp_max":300.335,"pressure":1008.59,"sea_level":1022.88,"grnd_level":1008.59,"humidity":98,"temp_kf":0,"dt_txt":"2016-09-01 15:00:00"}
+
+
+]
+
+2
+[
+
+{"temp":300.803,"temp_min":300.803,"temp_max":300.803,"pressure":1009.38,"sea_level":1023.56,"grnd_level":1009.38,"humidity":98,"temp_kf":0,"dt_txt":"2016-09-01 00:00:00"},
+{"temp":303.14,"temp_min":302.865,"temp_max":303.14,"pressure":1007.81,"sea_level":1021.87,"grnd_level":1007.81,"humidity":91,"temp_kf":0.27,"dt_txt":"2016-09-02 03:00:00"},
+{"temp":303.38,"temp_min":303.201,"temp_max":303.38,"pressure":1005.7,"sea_level":1019.89,"grnd_level":1005.7,"humidity":87,"temp_kf":0.18,"dt_txt":"2016-09-02 06:00:00"},
+{"temp":301.88,"temp_min":301.789,"temp_max":301.88,"pressure":1006.04,"sea_level":1020.22,"grnd_level":1006.04,"humidity":91,"temp_kf":0.09,"dt_txt":"2016-09-02 09:00:00"},
+{"temp":300.63,"temp_min":300.63,"temp_max":300.63,"pressure":1007.46,"sea_level":1021.57,"grnd_level":1007.46,"humidity":96,"temp_kf":0,"dt_txt":"2016-09-02 12:00:00"},
+{"temp":300.335,"temp_min":300.335,"temp_max":300.335,"pressure":1008.59,"sea_level":1022.88,"grnd_level":1008.59,"humidity":98,"temp_kf":0,"dt_txt":"2016-09-01 15:00:00"}
+
+]
+
+3
+[
+{"temp":300.087,"temp_min":300.087,"temp_max":300.087,"pressure":1006.38,"sea_level":1020.65,"grnd_level":1006.38,"humidity":100,"temp_kf":0,"dt_txt":"2016-09-02 18:00:00"},
+{"temp":299.589,"temp_min":299.589,"temp_max":299.589,"pressure":1006.32,"sea_level":1020.55,"grnd_level":1006.32,"humidity":100,"temp_kf":0,"dt_txt":"2016-09-02 21:00:00"},
+{"temp":300.251,"temp_min":300.251,"temp_max":300.251,"pressure":1007.59,"sea_level":1021.8,"grnd_level":1007.59,"humidity":100,"temp_kf":0,"dt_txt":"2016-09-03 00:00:00"},
+{"temp":301.679,"temp_min":301.679,"temp_max":301.679,"pressure":1007.28,"sea_level":1021.45,"grnd_level":1007.28,"humidity":96,"temp_kf":0,"dt_txt":"2016-09-03 03:00:00"},
+{"temp":301.354,"temp_min":301.354,"temp_max":301.354,"pressure":1006.03,"sea_level":1020.17,"grnd_level":1006.03,"humidity":96,"temp_kf":0,"dt_txt":"2016-09-03 06:00:00"},
+{"temp":300.712,"temp_min":300.712,"temp_max":300.712,"pressure":1006.27,"sea_level":1020.41,"grnd_level":1006.27,"humidity":97,"temp_kf":0,"dt_txt":"2016-09-03 09:00:00"}
+
+
+]
+
+4
+[
+{"temp":302.29,"temp_min":302.29,"temp_max":302.29,"pressure":1010.17,"sea_level":1024.39,"grnd_level":1010.17,"humidity":96,"temp_kf":0,"dt_txt":"2016-09-06 03:00:00"},
+{"temp":301.323,"temp_min":301.323,"temp_max":301.323,"pressure":1008.84,"sea_level":1023.13,"grnd_level":1008.84,"humidity":97,"temp_kf":0,"dt_txt":"2016-09-06 09:00:00"},
+{"temp":300.027,"temp_min":300.027,"temp_max":300.027,"pressure":1010,"sea_level":1024.27,"grnd_level":1010,"humidity":100,"temp_kf":0,"dt_txt":"2016-09-06 12:00:00"},
+{"temp":299.544,"temp_min":299.544,"temp_max":299.544,"pressure":1010.81,"sea_level":1025.17,"grnd_level":1010.81,"humidity":100,"temp_kf":0,"dt_txt":"2016-09-06 15:00:00"},
+{"temp":299.165,"temp_min":299.165,"temp_max":299.165,"pressure":1009.92,"sea_level":1024.22,"grnd_level":1009.92,"humidity":100,"temp_kf":0,"dt_txt":"2016-09-06 18:00:00"},
+{"temp":298.952,"temp_min":298.952,"temp_max":298.952,"pressure":1009.31,"sea_level":1023.59,"grnd_level":1009.31,"humidity":100,"temp_kf":0,"dt_txt":"2016-09-06 21:00:00"}
+
+
+
+
+]

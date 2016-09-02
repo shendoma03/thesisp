@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
+<head>
+      <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+            <!-- Latest compiled JavaScript -->
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 <body>
 
 Temperature: <input type="text" id="temp" >
 Humidity:    <input type="text" id="humid" >
 
-<p>Click the button to display the value of the value attribute of the text field.</p>
+
 
 <button onclick="myFunction()">Try it</button>
-
+<br>
 <p id="demo"></p>
 
 <script>
@@ -16,22 +26,61 @@ Humidity:    <input type="text" id="humid" >
 function myFunction() {
     var x = document.getElementById("temp").value;//kelvin
     var y = document.getElementById("humid").value;
-    x = kToC(x);
-    var tc = kToC(x);
+    //x = kToC(x);
+    //var tc = kToC(x);
 
-    var out = '<h4>Temperature:</h4>' + x+'<h3>°C</h3>' +'<br>';
-    out += '<h4>Humidity:</h4>' + y + '<br>';
-    out += '<h1>'+ mlr(x, y); + '</h1>';
+    var out = '<table class="table table-bordered"><tr><th>Temperature °C</th><th>Humidity</th><th>Multiple linear regression</th>';
+        out +='<th>Tree</th></tr>';
 
+        out +='<tc><td>'+x+'</td></tc>';
+        out +='<tc><td>'+y+'</td></tc>';
+        out +='<tc><td>'+mlr(x,y)+' '+moisture(mlr(x,y))+'</td></tc>';
+        out +='<tc><td>'+tree(x,y)+'</td></tc>';
+    
+    out += '</table>';
     document.getElementById("demo").innerHTML = out;
 }
 
-function predictS(temp, humid) {
+function moisture(sma){
+    var moisture;
+    if (sma <= 619){return moisture="Wet"}
+        else if (sma >=620){return moisture="Dry"};
+
+
+}
+
+function tree(temp, humid) {
     var prediction;
-    if (humid<53.8) //1
+    if (humid<53.8)
     {
         return prediction="Dry";
+    }
+        if(humid>=53.8)
+        {
+            if (humid>=92.1)
+            { 
+                return prediction="Wet";
+            } if(humid<92.1)
+             {
+                if(temp<27.25)
+                {
+                    return prediction="Dry";
+                }
+                    if(temp>=27.25)
+                    {
+                        if(humid>=90.75)
+                        {
+                            return prediction="Wet";
+                        }
+                        if(humid<90.75)
+                        {
+                            if(temp<27.95){return prediction="Dry";}
+                            if(temp>=27.95){return prediction="Wet";}
+                        }
+                    }
+             }
         }
+  
 }
 
 function mlr(temp, humid){
