@@ -21,42 +21,23 @@ function myFunction() {
 
     var out = '<h4>Temperature:</h4>' + x+'<h3>°C</h3>' +'<br>';
     out += '<h4>Humidity:</h4>' + y + '<br>';
-    out += '<h1>'+ predictS(x, y); + '</h1>';
+    out += '<h1>'+ mlr(x, y); + '</h1>';
 
     document.getElementById("demo").innerHTML = out;
 }
 
 function predictS(temp, humid) {
     var prediction;
-    if (humid<53.8)
-        {
-            return prediction="Dry";
+    if (humid<53.8) //1
+    {
+        return prediction="Dry";
         }
-        else if(humid>=53.8)
-        {
-            if (humid>=92.1){return prediction="Wet";
-           }
-        else if(humid<92.1)
-        {   
-            if (temp<27.25){return prediction="Dry";
-           }
-        else if(temp<27.25)
-        {
-            if (humid>=90.75){return prediction="Wet";
-           }
-        else if(humid<90.75)
-        {
-            if (temp<27.95){return prediction="Dry";
-           }
-           else if (temo>=27.95){return prediction="Wet";
-           }
-        }
-        }
-        }
+}
 
-        }
-
-
+function mlr(temp, humid){
+    var mlrpr;
+    mlrpr = 2162.70-7.73*(humid)-32.39*(temp);
+    return mlrpr;
 }
 
 function kToC(kelvin){
